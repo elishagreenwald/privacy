@@ -2,18 +2,18 @@
 <h3>System Onboarding & Compliance Verification Form</h3>
 <p>Authorized personnel must review and manually complete this registration block to provision a terminal for infrastructure logging. By submitting, you grant explicit consent for automated transactional status routing.</p>
 
-<form onsubmit="return false;" style="border: 1px solid #ccc; padding: 15px; max-width: 500px;">
+<form onsubmit="alert('Registration request received. Administration will review for provisioning.'); return false;" style="border: 1px solid #ccc; padding: 15px; max-width: 500px;">
   <label style="display:block; margin-bottom: 10px;">
     <strong>Mobile Phone Number:</strong><br>
-    <input type="text" placeholder="+1 (555) 555-5555" disabled />
+    <input type="tel" placeholder="+1 (555) 555-5555" style="padding: 5px; width: 200px;" required />
   </label>
   
   <label style="display:block; margin-bottom: 15px;">
-    <input type="checkbox" id="consent" /> 
+    <input type="checkbox" id="consent" required /> 
     I explicitly consent to enroll in the Greenwald IT Infrastructure Alerts utility. I agree to receive automated, machine-generated transactional system health updates and critical server log alerts. Message frequency varies based on real-time network infrastructure event logging. Standard message and data rates may apply. For technical support, reply HELP or contact admin@email.com. Reply STOP at any time to fully terminate enrollment and opt-out.
   </label>
   
-  <button type="button" disabled>Submit Registration</button>
+  <button type="submit" style="padding: 5px 10px; cursor: pointer;">Submit Registration</button>
 </form>
 <hr>
 
