@@ -1,19 +1,23 @@
 <hr>
 <h3>System Onboarding & Compliance Verification Form</h3>
-<p>Authorized personnel must review and manually complete this registration block to provision a terminal for infrastructure logging. By submitting, you grant explicit consent for automated transactional status routing.</p>
+<p>Authorized personnel may configure a terminal for infrastructure logging below. Setting up SMS notification routing is entirely voluntary and is not required to utilize the monitoring platform.</p>
 
-<form onsubmit="alert('Registration request received. Administration will review for provisioning.'); return false;" style="border: 1px solid #ccc; padding: 15px; max-width: 500px;">
+<form onsubmit="alert('Configuration updated successfully.'); return false;" style="border: 1px solid #ccc; padding: 15px; max-width: 500px;">
   <label style="display:block; margin-bottom: 10px;">
-    <strong>Mobile Phone Number:</strong><br>
-    <input type="tel" placeholder="+1 (555) 555-5555" style="padding: 5px; width: 200px;" required />
+    <strong>Mobile Phone Number (Optional):</strong><br>
+    <input type="tel" placeholder="+1 (555) 555-5555" style="padding: 5px; width: 200px;" />
+    <span style="font-size: 12px; color: #666; display: block; margin-top: 4px;">Leave blank if you do not wish to receive text alerts.</span>
   </label>
   
   <label style="display:block; margin-bottom: 15px;">
-    <input type="checkbox" id="consent" required /> 
-    I explicitly consent to enroll in the Greenwald IT Infrastructure Alerts utility. I agree to receive automated, machine-generated transactional system health updates and critical server log alerts. Message frequency varies based on real-time network infrastructure event logging. Standard message and data rates may apply. For technical support, reply HELP or contact elishaitnet@gmail.com Reply STOP at any time to fully terminate enrollment and opt-out.
+    <input type="checkbox" id="consent" /> 
+    <strong>[Optional]</strong> I explicitly consent to enroll in the Greenwald IT Infrastructure Alerts utility. I agree to receive automated, machine-generated transactional system health updates and critical server log alerts. Message frequency varies based on real-time network infrastructure event logging. Standard message and data rates may apply. For technical support, reply HELP or contact admin@email.com. Reply STOP at any time to fully terminate enrollment and opt-out.
   </label>
   
-  <button type="submit" style="padding: 5px 10px; cursor: pointer;">Submit Registration</button>
+  <div style="display: flex; gap: 10px;">
+    <button type="submit" style="padding: 5px 10px; cursor: pointer;">Save Notification Settings</button>
+    <button type="button" onclick="alert('Bypassed SMS setup. Account provisioned without text messaging.');" style="padding: 5px 10px; cursor: pointer; background: #eee; border: 1px solid #ccc;">Skip / Complete Setup Without SMS</button>
+  </div>
 </form>
 <hr>
 
